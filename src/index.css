@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #14231d;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  --green-950: #083d28;
+  --green-900: #0b5d3b;
+  --green-700: #168a55;
+  --green-500: #45b97c;
+  --mint-100: #eaf7ef;
+  --mint-50: #f6fbf7;
+  --text: #14231d;
+  --muted: #64736b;
+  --line: #e4eee7;
+  --heading-font: "Plus Jakarta Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+body { min-width: 320px; margin: 0; color: var(--text); background: #fff; font-size: 15px; line-height: 1.6; }
+body, button, a { font-family: "DM Sans", sans-serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+::selection { color: var(--green-950); background: #c9eed7; }
+:focus-visible { outline: 3px solid #75c896; outline-offset: 3px; }
+#root { min-height: 100vh; overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
